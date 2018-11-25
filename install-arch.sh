@@ -113,6 +113,7 @@ yay -S --noconfirm xclip mesa libva xorg-server xorg-xinit xorg-xbacklight syste
 yay -S termite alacritty tmux powerline vim fish ranger fzf --noconfirm
 yay -S google-chrome chromium gpicview --noconfirm
 yay -S yadm-git xfce4-screenshooter scrot playerctl xbackflight pamixer --noconfirm
+yay -S nitrogen --noconfirm
 
 # docker
 yay -S docker-bin docker-compose-bin --noconfirm
@@ -123,18 +124,20 @@ sudo usermod -aG docker $USER
 yay -S ttf-dejavu ttf-liberation ttf-roboto ttf-ubuntu-font-family --noconfirm
 yay -S nerd-fonts-complete --noconfirm 
 fc-cache -vf
+yay -S gucharmap --noconfirm
 
 # Dev Tools
 yay -S gradle maven jdk jdk8 nodejs spring-boot-cli httpie uuid traceroute tldr visual-studio-code-bin aws-cli --noconfirm
 sudo npm install -g yarn yo @angular/cli backslide
 sudo yarn global add generator-jhipster
+yay -S ruby ruby-bundler go strace --noconfirm
 
 # Password Tools
 sudo npm install -g lesspass-cli
 yay -S gopass --noconfirm
 
 # Desktop Environment
-ya -S polybar openbox obconf
+yay -S i3-wm --noconfirm
 
 # Configure VPN
 pacman -S openvpn
@@ -143,6 +146,7 @@ wget https://downloads.nordcdn.com/configs/archives/servers/ovpn.zip
 unzip ovpn.zip
 sudo systemctl enable openvpn-client@nordvpn.service
 sudo systemctl start openvpn-client@nordvpn.service
+
 
 # Minucube And Google Cloud SDK
 #yay -Sy libvirt qemu-headless ebtables dnsmasq google-cloud-sdk 
